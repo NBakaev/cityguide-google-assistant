@@ -1,0 +1,55 @@
+{
+  "name": "city-guide",
+  "description": "Actions on Google Client Library for Node.js",
+  "main": "app.js",
+  "version": "1.1.1",
+  "license": "Apache-2.0",
+  "author": "Google Inc.",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "semistandard --fix \"**/*.js\"",
+    "test": "npm run lint && ./node_modules/.bin/mocha --reporter spec ./test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/actions-on-google/actions-on-google-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/actions-on-google/actions-on-google-nodejs/issues"
+  },
+  "homepage": "https://github.com/actions-on-google/actions-on-google-nodejs#readme",
+  "keywords": [
+    "google",
+    "google actions",
+    "google assistant",
+    "client library"
+  ],
+  "semistandard": {
+    "globals": [
+      "after",
+      "afterEach",
+      "before",
+      "beforeEach",
+      "describe",
+      "it"
+    ]
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "debug": "^2.2.0",
+    "express": "^4.15.3",
+    "lodash.camelcase": "^4.3.0",
+    "lodash.snakecase": "^4.1.1",
+    "request": "^2.81.0",
+    "actions-on-google": "^1.1.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-spies": "^0.7.1",
+    "mocha": "^3.0.2",
+    "winston": "2.2.0",
+    "semistandard": "^9.1.0"
+  }
+}

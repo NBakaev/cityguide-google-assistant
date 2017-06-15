@@ -1,0 +1,27 @@
+{
+	"actions": [
+      {
+        "description": "Default Welcome Intent",
+        "name": "MAIN",
+        "fulfillment": {
+          "conversationName": "Guide Project"
+        },
+        "intent": {
+          "name": "actions.intent.MAIN",
+          "trigger": {
+            "queryPatterns": [
+              "talk to Guide Project"
+            ]
+          }
+        }
+      }
+    ],
+    "conversations": {
+      "Guide Project": {
+        "name": "Guide Project",
+        "url": "https://d549dca4.ngrok.io/api/v1/assistant",
+        "fulfillmentApiVersion": 2
+      }
+    }
+
+}
